@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Guessing Game</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Bootstrap and CSS here-->
  <!--    <style>
@@ -28,21 +28,25 @@
     </style> -->
 
   </head>
-  <body>
 
-      <div id='app' class="center">
+  <body class="container-fluid">
+
+      <div id='app' class="center row">
 
         <div id='headers'>
-          <h1>Play the Guessing Game!</h1>
 
-          <h2>Guess a Number between 1 - 100</h2>
+          <h1 id="title">Play the Guessing Game!</h1>
+
+          <h2 id="subtitle">Guess a Number between 1 - 100</h2>
+
         </div>
 
         <div id='main'>
+
           <div id='input-parent'>
-            <input type="text" name="guess" placeholder="Your Guess #" maxlength="3" autofocus><br>
+            <input id="guess_input" type="text" name="guess" placeholder="Your Guess #" maxlength="3" autofocus><br>
             
-            <input type="submit" value="Submit">
+            <button class="btn btn-primary" type="button">Make your Guess</button>
 
           </div>
 
@@ -57,30 +61,34 @@
           </div>
 
           <div id="menu-btns">
-            <button type="button">Reset</button>
-            <button type="button">Get a Hint!</button>
+            <button class="btn btn-default" type="button">Reset</button>
+            <button class="btn btn-default" type="button">Get a Hint!</button>
           </div>
+
         </div>
+
       </div>
 
 
 
-    <div id='footer' class="center">
+    <div id='footer' class="center row">
+
         <div>
-          <div class=''>
+
+          <div class="col-sm-4">
             <img src='fa-logo@2x.png'></img>
           </div>
 
-          <div class=''>
+          <div class="col-sm-4">
             <h4>Project by Lindsay Maher</h4>
           </div>
 
-          <div class=''>
+          <div class="col-sm-4">
             <img src='grace_hopper_academy.png'></img>
           </div>
 
-
         </div>
+
     </div>
 
   </body>
